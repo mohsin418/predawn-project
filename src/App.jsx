@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import Home from "./Home"
-import About from "./About"
-import Product from "./Product"
+import Home from "./Home" ;
+import About from "./About" ;
+import Product from "./Product" ;
 import Services from './Services';
-import './index.css'
+import Blogs from "./Blogs" ;
+import Commitment from "./Commitment"
+import Industries from "./Industries"
+import './index.css' ;
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -26,7 +29,7 @@ function App() {
           <a href="#about" className="hover:text-orange-500">About</a>
           <a href="#product" className="hover:text-orange-500">Products</a>
           <a href="#services" className="hover:text-orange-500">Services</a>
-          <a href="#" className="hover:text-orange-500">Blog</a>
+          <a href="#blog" className="hover:text-orange-500">Blog</a>
           <a href="#" className="hover:text-orange-500">Contact</a>
         </div>
 
@@ -65,15 +68,15 @@ function App() {
           {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-5 mt-4 py-5 border-t border-gray-200 text-sm font-medium text-gray-700">
 
-          <a href="#Home" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Home</a>
+          <a href="#home" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Home</a>
 
-          <a href="#About" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">About</a>
+          <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">About</a>
 
-          <a href="#Product" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Products</a>
+          <a href="#product" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Products</a>
 
-          <a href="#" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Services</a>
+          <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Services</a>
 
-          <a href="#" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Blog</a>
+          <a href="#blog" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Blog</a>
 
           <a href="#" onClick={() => setMenuOpen(false)} className="hover:text-orange-500">Contact</a>
 
@@ -103,6 +106,18 @@ function App() {
 
 <div id='services' className="scroll-mt-20">
   <Services />
+</div>
+
+<div className='scroll-mt-20' id='blog'>
+  <Blogs />
+</div>
+
+<div className='scroll-mt-20'>
+  <Commitment />
+</div>
+
+<div className='scroll-mt-20'>
+  <Industries />
 </div>
 
 

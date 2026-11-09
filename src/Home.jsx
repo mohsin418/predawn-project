@@ -60,11 +60,11 @@ function Home() {
         {/* Buttons */}
         <div className="flex gap-4 mt-6">
 
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md text-sx font-semibold">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md lg:text-[15px] md:text-[15px] text-[10px] font-semibold">
             Explore Our Products →
           </button>
 
-          <button className="border border-white text-white hover:bg-white hover:text-black px-5 py-2 rounded-md text-[15px]">
+          <button className="border border-white text-white hover:bg-white hover:text-black px-5 py-2 rounded-md lg:text-[15px] md:text-xs text-[10px]">
             Get a Quote
           </button>
 
