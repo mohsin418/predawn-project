@@ -6,6 +6,9 @@ import Services from './Services';
 import Blogs from "./Blogs" ;
 import Commitment from "./Commitment"
 import Industries from "./Industries"
+import Process from './Process';
+import Collection from "./Collection"
+import Footer from "./Footer"
 import './index.css' ;
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -118,6 +121,16 @@ function App() {
 
 <div className='scroll-mt-20'>
   <Industries />
+</div>
+
+<div className='scroll-mt-20'>
+  <Process />
+</div>
+<div className='scroll-mt-20'>
+  <Collection />
+</div>
+<div>
+  <Footer />
 </div>
 
 

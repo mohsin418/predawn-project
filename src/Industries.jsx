@@ -36,7 +36,7 @@ function Industries() {
   return (
     <section className="bg-white py-16 px-5">
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* Left Content */}
         <div>
